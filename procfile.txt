@@ -1,0 +1,1 @@
+api: npm --prefix ./api run build && npm --prefix ./api run start

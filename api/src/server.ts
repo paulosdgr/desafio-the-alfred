@@ -22,6 +22,7 @@ server.start().then(() => {
     app.use('/', cors(), json(), expressMiddleware(server));
 });
 
-app.listen(4000, () => {
+const PORT = Number(process.env.PORT) || 4000
+app.listen(PORT, () => {
     console.log('Server is listening on http://localhost:4000/graphql');
 });

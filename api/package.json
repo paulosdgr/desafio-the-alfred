@@ -16,7 +16,8 @@
     "dev": "nodemon -e ts -w ./src -x yarn dev:start",
     "dev:start": "ts-node --esm src/server.ts",
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "@apollo/server": "^4.9.2",
